@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Github user info</h1>
+</body>
+<main>
+    <button id="btn--fetchAll" class="mainBtn" onclick="fetchUsers()">
+        Show Users
+    </button>
+    <div id="user-list">
+        <!-- list of users of GitHub. Only need to display 30 -->
+    </div>
+    <form>
+        <!-- Search form -->
+        <input type="text" id="nameInp" required>
+        <button type="button" class="mainBtn" onclick="searchBtn()">search</button>
+        <label id="name"></label>
+    </form>
+    <section id="myModal" class="modal">
+        <!-- display result -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modalTitle">User card</h3>
+                <span class="close" onclick="cancelModal()">&times;</span>
+            </div>   
+            <div class="modal-main">
+                <div class="infoBlock">
+                    <div>
+                        <div class="modInfo">
+                            <label for="login">Login: </label>
+                            <h4 id="login"></h4>
+                        </div>
+                        <div class="modInfo">
+                            <label for="fullName">Full Name: </label>
+                            <h4 id="fullName"></h4>
+                        </div>
+                        <div class="modInfo">
+                            <label for="link">Link to profile: </label>
+                            <a id="link" target="_blank"></a>
+                        </div>
+                        <div class="modLang" id="lang">
+                            <label for="repoCount">Languages: </label>
+                        </div>
+                        <div class="modInfo">
+                            <label for="repoCount">Total Repositories: </label>
+                            <h4 id="repoCount"></h4>
+                        </div>
+                        <div class="modInfo">
+                            <label for="followersCount">Total Followers: </label>
+                            <h4 id="followersCount"></h4>
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <img id="avatar">
+                    </div>
+                </div>
+                <div id="repo">
+                </div>
+                <div id="foll">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../dist/index.js"></script>
+</html>

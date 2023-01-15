@@ -1,0 +1,252 @@
+body {
+    background-color: #252530;
+    margin: 20px;
+}
+
+h1 {
+    color: #ebebeb;
+}
+
+.minImg {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    display: flex;
+    margin: 0 10px;
+}
+
+#user-list {
+    margin: 20px 20px;
+}
+
+.mini-user-block {
+    font-size: 30px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(186, 178, 178);
+    position: relative;
+    background: #e1dfdc;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    transition: transform .2s ease;
+}
+
+.mini-user-block:hover {
+    transform: translateY(-3px);
+}
+
+.mini-user-block lable {
+    margin: 0 20px;
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 16px;
+}
+  
+.modal-header {
+    grid: 25% 75%;
+    margin: 10px 10px;
+}
+  
+h3 {
+    display: inline;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-main {
+    margin: 10px 10px;
+}
+
+.infoBlock {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#avatar {
+    width: 20vw;
+    float: right;
+}
+
+.imgBox {
+    justify-content: right;
+}
+
+.repoLink {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;  
+}
+
+.repoBlock{
+    cursor: pointer;
+    border: 1px solid rgb(186, 178, 178);
+    background-color: rgba(184, 215, 212, 0.906);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 5px 5px;
+    transition: transform .2s ease;
+}
+
+.repoBlock:hover, .follBlock:hover {
+    transform: translateY(-3px);
+}
+
+#repoBlock, #follBlock, #user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.repoBlock p{
+    margin: 0;
+}
+
+.modInfo, .modLang {
+    display: flex;
+    align-items: baseline;
+    padding: 10px 20px;
+}
+
+.modLang {
+    flex-wrap: wrap;
+}
+
+.modLang p {
+    margin: 5px 5px;
+    background-color:  #e1dfdc;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+#follBlock img{
+    width: 52px;
+}
+
+.follBlock {
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(186, 178, 178);
+    position: relative;
+    background: #e1dfdc;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    transition: transform .2s ease;
+}
+
+.follBlock lable {
+    margin: 0 10px;
+}
+
+.follBlock a{
+    width: 100%;
+    line-height: 100%;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+}
+
+.mainBtn{
+    font-size: 12px;
+    font-weight: bold;
+    box-sizing: border-box;
+    height: auto;
+    margin: 5px 0 0 0;
+    padding: 32px 35px 31px;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: .15s;
+    transition-property: background-color,padding-left,padding-right,color,width;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ebebeb;
+    border: 0;
+    border-radius: 16px;
+    outline: 0;
+    background-color: #363643;
+    padding: 20px 20px 20px;
+}
+
+.maimBtn:hover {
+    padding-right: 24px;
+    padding-left: 24px;
+    color: #333350;
+    background-color: #6f9a37;
+}
+
+input {
+    height: 40px;
+    border-radius: 16px;
+    background-color: #333350;
+    color: #ebebeb;
+}
+
+.hide {
+    display: none;
+}
+
+.dropbtn {
+    font-size: 10px;
+    box-sizing: border-box;
+    height: auto;
+    margin: 5px 0 0 0;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ebebeb;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #363643;
+}
+
+.dropbtn:hover {
+    color: #333350;
+    background-color: #6f9a37;
+}
